@@ -3,9 +3,11 @@
 
 ## Write a short comment describing this function
 
-makeCacheMatrix <- function(x = matrix()) {
+makeCacheMatrix <- function(x = matrix()) 
+{
     inv <- NULL
-    set <- function(y) {
+    set <- function(y) 
+    {
         x <<- y
         inv <<- NULL
     }
@@ -17,9 +19,11 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## Write a short comment describing this function
 
-cacheSolve <- function(x, ...) {
+cacheSolve <- function(x, ...) 
+{
     inv <- x$getinverse()
-    if(!is.null(inv)) {
+    if(!is.null(inv)) 
+    {
         message("getting cached data.")
         return(inv)
     }
